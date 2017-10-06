@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/* ===============================================================
+news_single
+=============================================================== */
+.main-img {
+  display: none;
+}
+
+.news-single-box {
+  border: 3px solid #0078be;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 25px 3%;
+}
+
+.news-single-box .news-thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 200px;
+  min-width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+.news-single-box .news-thumb img {
+  width: auto;
+  height: 200px;
+}
+
+.news-single-box .date-title {
+  margin: 15px 10px 0 10px;
+  text-align: left;
+}
+
+.news-single-box .news-date {
+  margin: 0 0 5px 0;
+}
+
+.news-single-box .news-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  word-break: break-all;
+}
+
+.news-single-box .news-kiji {
+  width: 100%;
+  max-width: 100%;
+  margin: 30px 0 0 0;
+  text-align: left;
+  word-break: break-all;
+}
+
+.news-single-box .news-kiji img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.btn-area {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.btn-area .new-btn,
+.btn-area .old-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #0078be;
+  color: #fff;
+  width: 130px;
+  margin: 0 auto 40px auto;
+}
+
+.btn-area .new-btn:hover,
+.btn-area .old-btn:hover {
+  background-color: #fa5a00;
+  color: #fff;
+}
+
+.btn-area .new-btn a,
+.btn-area .old-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.btn-area .new-btn input[type="submit"],
+.btn-area .old-btn input[type="submit"] {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.btn-area .btn-disable {
+  background-color: #bbb;
+  color: #666;
+}
+
+.btn-area .btn-disable:hover {
+  background-color: #bbb;
+  color: #666;
+}
+
+.btn-area .news-all-btn {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #0078be;
+  color: #fff;
+  margin: 0 auto 80px auto;
+}
+
+.btn-area .news-all-btn:hover {
+  background-color: #fa5a00;
+  color: #fff;
+}
+
+.btn-area .news-all-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.btn-area .news-all-btn input[type="submit"] {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+ruby rt {
+  font-size: 0.6em;
+}
+
+/* === news_single  PC用デザイン ==================================== */
+@media screen and (min-width: 768px) {
+  .news-single-area .news-single-box {
+    width: 900px;
+    max-width: 100%;
+    padding: 50px 100px;
+  }
+  .news-single-area .img-date-title {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .news-single-area .news-thumb {
+    margin: auto 0;
+  }
+  .news-single-area .date-title {
+    margin: 10px 0 0 40px;
+  }
+  .news-single-area .news-date {
+    margin: 0 0 20px 0;
+  }
+  .news-single-area .news-kiji {
+    margin: 50px 0 0 0;
+  }
+  .btn-area {
+    flex-wrap: nowrap;
+    max-width: 700px;
+    margin: 50px auto;
+  }
+  .btn-area .new-btn {
+    order: 1;
+  }
+  .btn-area .old-btn {
+    order: 3;
+  }
+  .btn-area .news-all-btn {
+    order: 2;
+  }
+}

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/* ===============================================================
+contact_conf
+=============================================================== */
+.main-img {
+  display: none;
+}
+
+.contact-conf-area .conf-table {
+  border: 3px solid #0078be;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 10px;
+}
+
+.contact-conf-area p {
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+  text-align: left;
+  font-weight: bold;
+}
+
+.contact-conf-area table {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-conf-area tr {
+  display: block;
+  margin: 30px 0;
+}
+
+.contact-conf-area th, .contact-conf-area td {
+  display: block;
+  text-align: left;
+  padding: 3px 0;
+  word-break: break-all;
+}
+
+.form-area {
+  width: 80%;
+  margin: 30px auto;
+  max-width: 300px;
+}
+
+.form-area form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-area .back-btn, .form-area .send-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #0078be;
+  color: #fff;
+  width: 100px;
+  text-align: center;
+}
+
+.form-area .back-btn:hover, .form-area .send-btn:hover {
+  background-color: #fa5a00;
+  color: #fff;
+}
+
+.form-area .back-btn a, .form-area .send-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.form-area .back-btn input[type="submit"], .form-area .send-btn input[type="submit"] {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+/* === contact_conf  PC用デザイン ==================================== */
+@media screen and (min-width: 768px) {
+  .contact-conf-area .conf-table {
+    width: 800px;
+  }
+  .contact-conf-area table {
+    display: table;
+    width: 700px;
+    max-width: 100%;
+    table-layout: fixed;
+  }
+  .contact-conf-area tr {
+    display: table-row;
+    vertical-align: top;
+  }
+  .contact-conf-area th, .contact-conf-area td {
+    display: table-cell;
+    padding: 15px 0;
+  }
+  .contact-conf-area th {
+    width: 30%;
+  }
+}

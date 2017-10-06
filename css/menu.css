@@ -1,0 +1,169 @@
+@charset "UTF-8";
+/* ===============================================================
+menu
+=============================================================== */
+#food-area,
+#drink-area,
+#neko-oyatu-area {
+  margin-top: -60px;
+  padding-top: 60px;
+}
+
+.osusume-menu .osusume-box {
+  margin: 60px auto 120px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.osusume-menu .food-img {
+  width: 70%;
+  border-radius: 50%;
+  overflow: hidden;
+  max-width: 420px;
+}
+
+.osusume-menu .food-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.osusume-menu .foodname-area {
+  padding: 5px;
+  height: 40px;
+  background-color: #ff2988;
+  position: absolute;
+  bottom: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.osusume-menu .foodname {
+  font-size: 0.8em;
+  color: #ffffff;
+  position: relative;
+  z-index: 20;
+  max-width: 200px;
+  min-width: 50px;
+  white-space: nowrap;
+}
+
+.osusume-menu .foodname::before, .osusume-menu .foodname::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  bottom: -30px;
+}
+
+.osusume-menu li:nth-of-type(odd) .foodname-area {
+  right: 10%;
+}
+
+.osusume-menu li:nth-of-type(odd) .foodname::before {
+  width: 80px;
+  height: 120px;
+  background: url("../images/atama.png") 0 0 no-repeat;
+  left: -50px;
+}
+
+.osusume-menu li:nth-of-type(odd) .foodname::after {
+  width: 14px;
+  height: 140px;
+  background: url("../images/sippo.png") 0 0 no-repeat;
+  right: -15px;
+}
+
+.osusume-menu li:nth-of-type(even) .foodname-area {
+  left: 10%;
+}
+
+.osusume-menu li:nth-of-type(even) .foodname::before {
+  width: 14px;
+  height: 140px;
+  background: url("../images/sippo.png") 0 0 no-repeat;
+  left: -15px;
+}
+
+.osusume-menu li:nth-of-type(even) .foodname::after {
+  width: 80px;
+  height: 120px;
+  background: url("../images/atama.png") 0 0 no-repeat;
+  right: -50px;
+}
+
+.sonota-menu {
+  border: 3px solid #0078be;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.sonota-menu li {
+  margin: 20px auto;
+}
+
+.sonota-menu .food-name p {
+  overflow: hidden;
+  max-width: 255px;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+/* === menu  PC用デザイン ==================================== */
+@media screen and (min-width: 768px) {
+  .nav-menu .main-menu-link::before {
+    content: "";
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 8px;
+    height: 36px;
+    border-radius: 20px;
+    background-color: #ff0;
+    width: 145px;
+    left: 13px;
+  }
+  .osusume-menu {
+    margin: 0 0 50px 0;
+  }
+  .osusume-menu .osusume-box {
+    margin: 0;
+    max-width: 100%;
+  }
+  .osusume-menu li:nth-of-type(odd) .osusume-box {
+    padding-right: 300px;
+  }
+  .osusume-menu li:nth-of-type(odd) .foodname-area {
+    right: auto;
+    bottom: 60px;
+    left: 500px;
+  }
+  .osusume-menu li:nth-of-type(even) .osusume-box {
+    padding-left: 300px;
+  }
+  .osusume-menu li:nth-of-type(even) .foodname-area {
+    left: auto;
+    bottom: 60px;
+    right: 500px;
+  }
+  .sonota-menu {
+    width: 900px;
+    padding: 20px 50px;
+  }
+  .sonota-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .sonota-menu li {
+    display: flex;
+    width: 340px;
+    margin: 10px 20px;
+    justify-content: space-between;
+  }
+}

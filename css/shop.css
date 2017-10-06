@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* ===============================================================
+shop
+=============================================================== */
+#neko-staff,
+#price-list {
+  margin-top: -60px;
+  padding-top: 60px;
+}
+
+#neko-staff .neko-staff-box {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 75vmin;
+  max-width: 300px;
+  min-width: 225px;
+  height: 75vmin;
+  max-height: 300px;
+  min-height: 225px;
+  margin: 40px auto 80px auto;
+}
+
+#neko-staff .neko-staff-img {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#neko-staff .neko-staff-img a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#neko-staff .neko-staff-img a::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+#neko-staff .neko-staff-img img {
+  width: 100%;
+  height: auto;
+}
+
+#neko-staff .staffname-area {
+  display: flex;
+  justify-content: center;
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -20px;
+}
+
+#neko-staff .btn-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #0078be;
+  color: #fff;
+}
+
+#neko-staff .btn-area:hover {
+  background-color: #fa5a00;
+  color: #fff;
+}
+
+#neko-staff .btn-area a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+#neko-staff .btn-area input[type="submit"] {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+#neko-staff .staffname {
+  display: inline-block;
+  width: 100%;
+  min-width: 100px;
+  overflow: hidden;
+  padding: 0 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.inline-box {
+  border: 3px solid #0078be;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  max-width: 500px;
+  min-width: 260px;
+  margin: 8% auto;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  max-width: 400px;
+  min-width: 180px;
+  height: 60vw;
+  max-height: 400px;
+  min-height: 180px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 10% auto 6% auto;
+  background-color: #fff;
+}
+
+.profile-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.profile-text {
+  padding: 0 8% 10% 8%;
+}
+
+.profile-text p {
+  margin: 4px 0;
+  word-break: break-all;
+}
+
+.profile-text p:last-of-type {
+  margin: 15px 0 4px 0px;
+}
+
+.popup-modal-close {
+  text-align: center;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #0078be;
+  color: #fff;
+  width: 150px;
+  margin: 20px auto 0 auto;
+}
+
+.close-btn:hover {
+  background-color: #fa5a00;
+  color: #fff;
+}
+
+.close-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.close-btn input[type="submit"] {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+#price-list .price-list-area {
+  border: 3px solid #0078be;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  margin: 50px auto;
+}
+
+#price-list table {
+  width: 220px;
+  margin: 0 auto;
+}
+
+#price-list tr {
+  display: block;
+  width: 100%;
+  margin: 30px 0;
+  font-size: 1.2em;
+}
+
+#price-list tr:first-of-type {
+  display: none;
+}
+
+#price-list th {
+  display: block;
+}
+
+#price-list td {
+  display: flex;
+  justify-content: space-between;
+}
+
+#price-list .weekday::before {
+  content: "平日：";
+  display: block;
+}
+
+#price-list .holiday::before {
+  content: "土・日・祝：";
+  display: block;
+}
+
+/* === shop  モバイル用(横向き)デザイン ==================================== */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .inline-box {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    max-width: initial;
+    min-width: initial;
+    max-height: initial;
+    min-height: initial;
+    max-width: auto;
+    min-width: auto;
+    max-height: auto;
+    min-height: auto;
+    margin: 5vmin auto;
+    padding: 4%;
+  }
+  .profile-image {
+    width: 30vw;
+    height: 30vw;
+    margin: auto 0;
+    min-width: 30vw;
+    min-height: 30vw;
+  }
+  .profile-text {
+    width: 100%;
+    padding: 0 0 0 5%;
+  }
+}
+
+/* === shop  PC用デザイン ==================================== */
+@media screen and (min-width: 768px) {
+  .nav-shop .main-menu-link::before {
+    content: "";
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 8px;
+    height: 36px;
+    border-radius: 20px;
+    background-color: #ff0;
+    width: 150px;
+    left: 13px;
+  }
+  #neko-staff ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1040px;
+  }
+  #neko-staff li {
+    margin: 10px auto 80px auto;
+  }
+  #neko-staff .neko-staff-box {
+    width: 300px;
+    margin: 0;
+  }
+  #neko-staff .neko-staff-img {
+    width: 100%;
+  }
+  .inline-box {
+    display: flex;
+    width: 960px;
+    max-width: 100%;
+    margin: 80px auto 50px auto;
+    padding: 80px 40px 80px 60px;
+  }
+  .profile-image {
+    width: 400px;
+    min-width: 400px;
+    height: 400px;
+    min-height: 400px;
+    margin: 0 30px 0 0;
+  }
+  .profile-text {
+    padding: 0;
+    font-size: 1.2em;
+  }
+  .profile-text p {
+    margin: 6px;
+  }
+  .profile-text p:last-of-type {
+    margin: 30px 0 6px 8px;
+  }
+  #price-list .price-list-area {
+    width: 800px;
+    padding: 40px 0;
+  }
+  #price-list table {
+    display: table;
+    width: 540px;
+    max-width: 100%;
+  }
+  #price-list tr {
+    display: table-row;
+  }
+  #price-list tr:first-of-type {
+    display: table-row;
+  }
+  #price-list th, #price-list td {
+    display: table-cell;
+    padding: 18px 0;
+  }
+  #price-list .weekday, #price-list .holiday {
+    display: table-cell;
+  }
+  #price-list .weekday::before, #price-list .holiday::before {
+    display: none;
+  }
+}

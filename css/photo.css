@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/* ===============================================================
+photo
+=============================================================== */
+.photo .photo-area {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.photo .photo-area ul {
+  columns: 150px;
+}
+
+.photo .photo-area a {
+  border: 3px solid #0078be;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+}
+
+.photo .photo-area img {
+  width: 150px;
+  height: auto;
+}
+
+/* === photo  PC用デザイン ==================================== */
+@media screen and (min-width: 768px) {
+  .nav-photo .main-menu-link::before {
+    content: "";
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 8px;
+    height: 36px;
+    border-radius: 20px;
+    background-color: #ff0;
+    left: 12px;
+    width: 120px;
+  }
+  .photo .photo-area {
+    max-width: 1000px;
+  }
+}

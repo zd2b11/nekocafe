@@ -1,0 +1,55 @@
+/* ===============================================================
+contact_done   contact_error
+=============================================================== */
+.main-img {
+  display: none;
+}
+
+.text-area {
+  border: 3px solid #0078be;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto 40px auto;
+  padding: 30px 20px;
+}
+
+.text-area p {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  word-break: break-all;
+}
+
+.top-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #0078be;
+  color: #fff;
+  width: 250px;
+  margin: 0 auto 80px auto;
+}
+
+.top-btn:hover {
+  background-color: #fa5a00;
+  color: #fff;
+}
+
+.top-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+
+.top-btn input[type="submit"] {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
