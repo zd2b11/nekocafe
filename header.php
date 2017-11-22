@@ -65,8 +65,8 @@ elseif ($bodyClass == "contact") {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-<meta name="description" content="">
-<meta name="keywords" content="">
+<meta name="description" content="○○県○○市JR○○駅から徒歩２分のネコカフェ マロ。店長マロをはじめとする個性豊かな猫スタッフが皆さまをお待ちしております。のんびりゆったり癒しのお時間をお楽しみください。">
+<meta name="keywords" content="猫カフェ,ネコカフェ,猫,ネコ,ねこ,マロ,休憩,癒し,食事,関東">
 <meta name="format-detection" content="telephone=no">
 <title><?php bloginfo('name'); ?></title>
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/images/marofavicon.ico">
